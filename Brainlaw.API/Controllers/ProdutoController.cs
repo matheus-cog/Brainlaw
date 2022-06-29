@@ -38,7 +38,7 @@ namespace Brainlaw.API.Controllers
             try
             {
                 if (ProdutoDTO == null)
-                    return NotFound();
+                    return NoContent();
                 if (ProdutoDTO.Id == 0)
                     return Ok("Id inválido");
                 
@@ -59,7 +59,7 @@ namespace Brainlaw.API.Controllers
             try
             {
                 if (ProdutoDTO == null)
-                    return NotFound();
+                    return NoContent();
 
                 applicationServiceProduto.Update(ProdutoDTO);
                 return Ok("O produto foi atualizado com sucesso!");
@@ -77,7 +77,7 @@ namespace Brainlaw.API.Controllers
             try
             {
                 if (ProdutoDTO == null)
-                    return NotFound();
+                    return NoContent();
                 if (ProdutoDTO.Id == 0)
                     return Ok("Id inválido");
 
